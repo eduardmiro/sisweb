@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+	<ol>
+	<h2> Los sobres contienen </h2>
+	{% for sobres in envelopes %}
+	<li>{{sobres.Company.name}} contiene:
+	<i>{{sobres.Amount}}</i></li>
+	{% endfor %}
+	</ol>
+{% endblock %}
